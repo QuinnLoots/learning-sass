@@ -90,7 +90,7 @@ main{
         margin-right: auto;
         @include mobile{
         width: 80%;
-    }
+        }
     }  
    
 }
@@ -109,17 +109,24 @@ footer{
         @include mobile{
             display: flex;
             justify-content: center;
-    }
+        }
     }
     ul{
         color: #ffffff;
         list-style-type: none;
         padding: 0;
+        margin: 0 $margin*2 0 $margin*2;
+        @include mobile{
+            margin-top: $margin*4;
+        }
     }
 
     li{
         margin-top: $margin;
         margin-bottom: $margin;
+        @include mobile{
+            text-align: center;
+        }
         
     }
 }
