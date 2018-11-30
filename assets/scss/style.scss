@@ -73,7 +73,8 @@ nav{
         font-size: 17px;
         @include mobile{
         width: 80%;
-        margin: 0 auto;
+        margin: $margin auto;
+
     }
     }
 }
