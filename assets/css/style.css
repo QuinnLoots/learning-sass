@@ -118,5 +118,12 @@ footer li {
     text-align: center;
   }
 }
+footer li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer li a:hover {
+  color: #FF4040;
+}
 
 /*# sourceMappingURL=style.css.map */

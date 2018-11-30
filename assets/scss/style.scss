@@ -126,7 +126,14 @@ footer{
         margin-bottom: $margin;
         @include mobile{
             text-align: center;
-        }
-        
+        }   
     }
+    li a {
+        color: #ffffff;
+        text-decoration: none;
+        &:hover{
+           color: #FF4040; 
+        }
+    }
+    
 }
