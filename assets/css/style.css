@@ -92,9 +92,16 @@ footer .footercontainer {
     flex-direction: column;
   }
 }
+@media (max-width: 975px) {
+  footer .footercontainer div {
+    display: flex;
+    justify-content: center;
+  }
+}
 footer ul {
   color: #ffffff;
   list-style-type: none;
+  padding: 0;
 }
 footer li {
   margin-top: 10px;

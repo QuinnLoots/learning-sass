@@ -102,15 +102,19 @@ footer{
         justify-content: center;
         background-color: $secondary-color;
         @include mobile{
-        flex-direction: column;
+            flex-direction: column;
+        }
     }
-        
+.footercontainer div{
+        @include mobile{
+            display: flex;
+            justify-content: center;
     }
-
+    }
     ul{
         color: #ffffff;
         list-style-type: none;
-        
+        padding: 0;
     }
 
     li{
