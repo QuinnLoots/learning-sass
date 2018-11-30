@@ -8,21 +8,34 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  text-align: center;
 }
 
 .primarylist li, nav ul li, .secondarylist li {
   float: left;
+}
+@media (max-width: 975px) {
+  .primarylist li, nav ul li, .secondarylist li {
+    width: 100%;
+  }
 }
 
 .secondarylist {
   display: flex;
   justify-content: center;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .secondarylist li {
   margin-right: 10px;
   margin-left: 10px;
+}
+
+@media (max-width: 975px) {
+  .secondarylist li img {
+    width: 100%;
+  }
 }
 
 nav ul {
@@ -39,12 +52,18 @@ nav li a:hover {
   background-color: #457ba4;
 }
 nav input[type=text] {
-  float: right;
   padding: 6px;
   border: none;
   margin-top: 8px;
   margin-right: 16px;
+  margin-left: 16px;
   font-size: 17px;
+}
+@media (max-width: 975px) {
+  nav input[type=text] {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 main .bannercontainer {
@@ -55,6 +74,31 @@ main .bannercontainer img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 975px) {
+  main .bannercontainer img {
+    width: 80%;
+  }
+}
+
+footer .footercontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #457ba4;
+}
+@media (max-width: 975px) {
+  footer .footercontainer {
+    flex-direction: column;
+  }
+}
+footer ul {
+  color: #ffffff;
+  list-style-type: none;
+}
+footer li {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
